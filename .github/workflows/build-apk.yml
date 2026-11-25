@@ -22,8 +22,7 @@ jobs:
 
       - name: Prepare web files
         run: |
-          mkdir -p www
-          [ -f www/index.html ] || cp Flappy_Bird_Deluxe.html www/index.html
+          [ -f www/index.html ] || cp ./*.html www/index.html
 
       - name: Install dependencies
         run: npm install
